@@ -10,6 +10,7 @@ fun main() {
 
         var input = readLine()
         if (input == null) continue
+//        if (input == "exit") exitProcess(0)
         if (input == "exit") exitProcess(0)
 
         var inputList = input.split(" ")

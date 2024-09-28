@@ -1,4 +1,4 @@
-package com.boycoder
+package calculator
 
 import com.boycoder.calculator.Operation
 import kotlin.system.exitProcess
@@ -34,9 +34,10 @@ private fun calculate(inputList: List<String>): Int? {
     if (inputList.size != 3) return null
 
     val left = inputList[0].toInt()
-    //1 ADD 2 = 3
-    val operation = Operation.valueOf(inputList[1])
+    val operationSymbol = inputList[1]
     val right = inputList[2].toInt()
+
+    val operation = Operation.entries.find { it.value == operationSymbol } ?: return null
 
     return when (operation) {
         Operation.ADD -> left + right
