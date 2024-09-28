@@ -2,6 +2,8 @@ package ch11.ex1_1_FunctionsAndPropertiesThatWorkWithGenericTypes
 
 fun main() {
     val letters = ('a'..'z').toList()
+    val slice = letters.slice<Char>(0..2)
+
     println(letters.slice<Char>(0..2))
     // [a, b, c]
     println(letters.slice(10..13))

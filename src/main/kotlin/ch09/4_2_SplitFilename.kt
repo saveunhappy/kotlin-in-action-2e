@@ -16,4 +16,12 @@ fun main() {
     // example
     println(ext)
     // kt
+    val str1 = "example.test.kt"
+    val result1 = str1.split('.', limit = 2)
+    println(result1)  // 输出: [example, test.kt]
+
+    val str2 = "example.kt"
+    val result2 = str2.split('.', limit = 2)
+    println(result2)  // 输出: [example, kt]
+
 }
