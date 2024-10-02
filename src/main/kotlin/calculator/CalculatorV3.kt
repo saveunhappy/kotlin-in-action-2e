@@ -79,6 +79,7 @@ class CalculatorV3 {
             //如果两个二位数相加超过100，这里就会有用
             result.append(carry)
         }
+
         //字符串拼接的是从个位到百位，所以需要翻转
         return result.reverse().toString()
     }
