@@ -1,7 +1,7 @@
 package ch04.ex2_4_1_AccessingABackingFieldFromAGetterOrSetter
 
 class User(val name: String) {
-    var address: String = "unspecified"
+    var address: String = "unspecified"//这个是默认值。
         set(value: String) {
             println(
                 """

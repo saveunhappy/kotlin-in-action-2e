@@ -34,6 +34,10 @@ fun createTable() =
             td {
             }
         }
+        tr {
+            td {
+            }
+        }
     }
 
 fun main() {

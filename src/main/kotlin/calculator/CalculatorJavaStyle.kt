@@ -8,7 +8,7 @@ fun main() {
                 "比如：1 + 1，注意符合与数字之间要有空格。\n" +
                 "输入exit，退出程序。")
 
-        var input = readLine()
+        val input = readLine()
         if (input == null) continue
 //        if (input == "exit") exitProcess(0)
         if (input == "exit") exitProcess(0)
@@ -22,6 +22,7 @@ fun main() {
         } else {
             println("$input = $result")
         }
+
     }
 }
 

@@ -1,6 +1,8 @@
 package ch11.ex2_1_FunctionsWithReifiedTypeParametersCanReferToActualTypeArgumentsAtRunTime
 
-inline fun <reified T> isA(value: Any) = value is T
+inline fun <reified T> isA(value: Any): Boolean {
+    return value is T
+}
 
 fun main() {
     println(isA<String>("abc"))
